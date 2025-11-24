@@ -1,0 +1,41 @@
+services:
+  # Next.js Application - Using External Database (same as Jotion)
+  app:
+    image: todo-app
+    build:
+      context: ../../services/nextjs
+      dockerfile: ../../deploy/docker/Dockerfile.prod
+    container_name: todo-app
+    restart: unless-stopped
+    labels:
+      kompose.namespace: todo
+    ports:
+      - 3002:3000
+    env_file:
+      - ../../.env
+    environment:
+      - NODE_ENV=production
+    networks:
+      - todo-network
+    volumes:
+      - app_logs:/app/logs
+    healthcheck:
+      test: [CMD, curl, -f, http://localhost:3000/api/health]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    command: >
+      sh -lc "npx prisma db push --skip-generate && node server.js"
+
+volumes:
+  # Named volumes for data persistence
+  app_logs:
+    driver: local
+
+networks:
+  todo-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16

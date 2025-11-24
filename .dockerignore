@@ -1,0 +1,54 @@
+node_modules
+.next
+.git
+.gitignore
+.DS_Store
+*.log
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist
+out
+build
+
+# Testing
+coverage
+.nyc_output
+
+# Docker files
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Scripts and deployment
+scripts/
+deploy/
+
+# Documentation
+README.md
+*.md
+
+# Prisma
+prisma/migrations/
+
+# Config files
+.editorconfig
+.eslintrc.json
+.prettierrc
+
+# OS
+Thumbs.db
+
+# Trunk
+.trunk
+
