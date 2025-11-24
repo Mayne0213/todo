@@ -1,6 +1,11 @@
 import { TodoApp } from '@/src/widgets/todo-app'
+import PasswordModal from '@/src/features/password-auth/ui/PasswordModal'
 
 export default function Home() {
-  return <TodoApp />
+  return (
+    <PasswordModal>
+      <TodoApp />
+    </PasswordModal>
+  )
 }
 
