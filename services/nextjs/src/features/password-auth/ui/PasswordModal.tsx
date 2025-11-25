@@ -69,7 +69,7 @@ export default function PasswordModal({ children }: PasswordModalProps) {
   // 인증 상태 확인 중일 때 로딩 표시
   if (isChecking) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
         <div className="bg-white rounded-lg shadow-xl p-8">
           <p className="text-gray-600">확인 중...</p>
         </div>
@@ -82,7 +82,7 @@ export default function PasswordModal({ children }: PasswordModalProps) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
       <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-md mx-4">
         <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
           비밀번호 입력
