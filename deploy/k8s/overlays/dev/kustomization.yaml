@@ -11,10 +11,5 @@ resources:
 commonLabels:
   environment: development
 
-# 이미지 태그 설정 (dev 브랜치 사용 시)
-images:
-  - name: ghcr.io/mayne0213/todo
-    newTag: main-sha-62157e0d1d7aef81d49a6df5dd5f8b3e3602c208
-
 patchesStrategicMerge:
   - deployment-patch.yaml
