@@ -5,9 +5,9 @@ metadata:
   namespace: todo
 spec:
   hard:
-    requests.memory: "750Mi"
-    requests.cpu: "600m"
-    limits.memory: "1200Mi"
-    limits.cpu: "1200m"
+    requests.memory: "250Mi"
+    requests.cpu: "100m"
+    limits.memory: "500Mi"
+    limits.cpu: "200m"
     pods: "9"
 
