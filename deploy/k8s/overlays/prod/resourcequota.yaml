@@ -8,6 +8,5 @@ spec:
     requests.memory: "250Mi"
     requests.cpu: "100m"
     limits.memory: "500Mi"
-    limits.cpu: "200m"
     pods: "9"
 
