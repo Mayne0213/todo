@@ -12,9 +12,8 @@ spec:
         - name: todo-app
           resources:
             requests:
-              memory: "120Mi"
-              cpu: "50m"
+              memory: "50Mi"
+              cpu: "20m"
             limits:
-              memory: "230Mi"
-              cpu: "150m"
+              memory: "120Mi"
 
