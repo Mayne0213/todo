@@ -6,6 +6,7 @@ namespace: todo
 resources:
   - ../../base
   - resourcequota.yaml
+  - sealed-todo-secrets.yaml
 
 commonLabels:
   environment: production
@@ -17,4 +18,3 @@ images:
 
 patchesStrategicMerge:
   - deployment-patch.yaml
-

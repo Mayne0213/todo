@@ -7,6 +7,7 @@ resources:
   - ../../base
   - resourcequota.yaml
   - namespace.yaml
+  - sealed-todo-secrets.yaml
 
 commonLabels:
   environment: development
@@ -14,7 +15,7 @@ commonLabels:
 # 이미지 태그 설정
 images:
   - name: ghcr.io/mayne0213/todo
-    newTag: develop-sha-041af0aed2d6b9120c7b26bc8c5cfea1e3ffa65c
+    newTag: develop-sha-0e382c41edf46e7cbba7ba281af165f84d7cd8d0
 
 patchesStrategicMerge:
   - deployment-patch.yaml
