@@ -18,4 +18,3 @@ images:
 
 patchesStrategicMerge:
   - deployment-patch.yaml
-
