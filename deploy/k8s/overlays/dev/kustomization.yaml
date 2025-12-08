@@ -15,7 +15,7 @@ commonLabels:
 # 이미지 태그 설정
 images:
   - name: ghcr.io/mayne0213/todo
-    newTag: develop-sha-83bcdc6e9848ebc735e72ea9e0d91cb0a30dca3e
+    newTag: develop-sha-489b5be29a98d8ca1fc8b92aba3f0981806cdc8c
 
 patchesStrategicMerge:
   - deployment-patch.yaml
