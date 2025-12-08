@@ -34,7 +34,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: todo-secrets
-                  key: DATABASE_URL
+                  key: database-url
           resources:
             requests:
               memory: "100Mi"
